@@ -1,0 +1,16 @@
+{
+  "candidatos": [
+    {
+      "numero": "01",
+      "nome": "Fulano Beltrano",
+      "partido": "XY",
+      "imagem": "candidato1.jpg"
+    },
+    {
+      "numero": "02",
+      "nome": "Beltrano Cicrano",
+      "partido": "YZ",
+      "imagem": "candidato2.jpg"
+    }
+  ]
+}

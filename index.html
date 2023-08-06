@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urna eletrônica</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="comecarVotacao()">
+    <div id="corpo">
+      <div id="tela1">
+        <img id="imagemCandidato" src="" alt="" />
+        <p id="txt1">SEU VOTO PARA</p>
+        <p id="txt2">Presidente</p>
+        <div id="quadrado1" class="quadrado"></div>
+        <div id="quadrado2" class="quadrado"></div>
+        <p id="nome"></p>
+        <p id="partido"></p>
+        <p id="votoNulo"></p>
+        <p id="votoBranco"></p>
+        <p id="fim"></p>
+        <div id="final">
+          <hr />
+          <p>CONFIRMA para CONFIRMAR este voto.</p>
+          <p>CORRIGE para CORRIGIR este voto.</p>
+        </div>
+      </div>
+
+      <div id="tela2">
+        <div class="linha">
+          <div class="botao" onclick="clicar('1')"><p>1</p></div>
+          <div class="botao" onclick="clicar('2')"><p>2</p></div>
+          <div class="botao" onclick="clicar('3')"><p>3</p></div>
+        </div>
+        <div class="linha">
+          <div class="botao" onclick="clicar('4')"><p>4</p></div>
+          <div class="botao" onclick="clicar('5')"><p>5</p></div>
+          <div class="botao" onclick="clicar('6')"><p>6</p></div>
+        </div>
+        <div class="linha">
+          <div class="botao" onclick="clicar('7')"><p>7</p></div>
+          <div class="botao" onclick="clicar('8')"><p>8</p></div>
+          <div class="botao" onclick="clicar('9')"><p>9</p></div>
+        </div>
+        <div class="linha">
+          <div class="botao" onclick="clicar('0')"><p>0</p></div>
+        </div>
+
+        <div class="linha">
+          <div class="botao botao-branco" onclick="clicar('BRANCO')">
+            <p>BRANCO</p>
+          </div>
+          <div class="botao botao-corrige" onclick="clicar('CORRIGE')">
+            <p>CORRIGE</p>
+          </div>
+          <div class="botao botao-confirma" onclick="clicar('CONFIRMA')">
+            <p>CONFIRMA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
